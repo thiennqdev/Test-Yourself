@@ -1,0 +1,47 @@
+# Root & Environment files
+.env
+.env.*
+!.env.example
+*.git_separate_repo*
+**/.git_separate_repo/**
+*.git_backup*
+**/.git_backup/**
+
+# Backend: Virtual Environment & Python Cache
+testyourself-backend/venv/
+testyourself-backend/env/
+testyourself-backend/ENV/
+testyourself-backend/__pycache__/
+testyourself-backend/*/__pycache__/
+testyourself-backend/*/*/__pycache__/
+testyourself-backend/.env
+testyourself-backend/.env.*
+!testyourself-backend/.env.example
+*.py[cod]
+*$py.class
+*.pyc
+*.pytest_cache/
+
+# Backend: Local Database & Uploads
+testyourself-backend/instance/*.db
+testyourself-backend/instance/*.sqlite3
+testyourself-backend/uploads/*
+!testyourself-backend/uploads/.gitkeep
+
+# Frontend: Node modules & Build output
+testyourself-frontend/node_modules/
+testyourself-frontend/dist/
+testyourself-frontend/dist-ssr/
+testyourself-frontend/.env
+testyourself-frontend/.env.*
+!testyourself-frontend/.env.example
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE & OS Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
